@@ -1,0 +1,28 @@
+<!-- 页面容器，使用flex布局垂直居中排列内容 -->
+<view class="container">
+  <!-- 页面标题 -->
+  <view class="title">今天吃什么？</view>
+  
+  <!-- 食物展示区域，当isAnimating为true时会添加动画效果 -->
+  <view class="food-display {{isAnimating ? 'animate' : ''}}">
+    <!-- 显示食物分类 -->
+    <text class="food-category">{{currentFood.category}}</text>
+    <!-- 显示食物emoji -->
+    <text class="food-emoji">{{currentFood.image}}</text>
+    <!-- 显示当前推荐的食物名称 -->
+    <text class="food-name">{{currentFood.name}}</text>
+  </view>
+  
+  <!-- 按钮区域 -->
+  <view class="button-area">
+    <!-- 随机推荐按钮，点击时触发randomFood函数，按下时显示hover效果 -->
+    <button class="random-btn" bindtap="randomFood" hover-class="button-hover">
+      {{isFirstClick ? '随机推荐' : '换一个'}}
+    </button>
+  </view>
+
+  <!-- 作者信息区域 -->
+  <view class="author-info">
+    <text>xyhou 2025.2.24</text>
+  </view>
+</view>

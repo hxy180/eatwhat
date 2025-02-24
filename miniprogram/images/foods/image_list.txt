@@ -1,0 +1,65 @@
+需要准备的食物图片列表：
+
+中餐类：
+1. chuancai.jpg - 川菜
+2. yuecai.jpg - 粤菜
+3. xiangcai.jpg - 湘菜
+4. lucai.jpg - 鲁菜
+5. sucai.jpg - 苏菜
+6. zhecai.jpg - 浙菜
+7. mincai.jpg - 闽菜
+8. huicai.jpg - 徽菜
+
+西餐类：
+9. pasta.jpg - 意大利面
+10. steak.jpg - 牛排
+11. pizza.jpg - 披萨
+12. burger.jpg - 汉堡
+13. salad.jpg - 沙拉
+14. sandwich.jpg - 三明治
+15. roast_chicken.jpg - 烤鸡
+
+日料类：
+16. sushi.jpg - 寿司
+17. ramen.jpg - 拉面
+18. sashimi.jpg - 刺身
+19. tempura.jpg - 天妇罗
+20. yakiniku.jpg - 烤肉
+21. donburi.jpg - 盖饭
+22. udon.jpg - 乌冬面
+
+快餐类：
+23. fried_chicken.jpg - 炸鸡
+24. bento.jpg - 便当
+25. rice_bowl.jpg - 盖浇饭（已有）
+26. fried_noodles.jpg - 炒面
+27. jianbing.jpg - 煎饼
+28. kfc.jpg - 肯德基
+29. mcdonalds.jpg - 麦当劳
+
+小吃类：
+30. dumplings.jpg - 饺子
+31. baozi.jpg - 包子
+32. wonton.jpg - 馄饨
+33. noodles.jpg - 面食
+34. fried_rice_noodles.jpg - 炒粉
+35. rice_noodle_roll.jpg - 肠粉
+36. chinese_crepe.jpg - 煎饼果子
+
+特色类：
+37. hotpot.jpg - 火锅
+38. bbq.jpg - 烧烤
+39. malatang.jpg - 麻辣烫
+40. grilled_fish.jpg - 烤鱼
+41. seafood.jpg - 海鲜
+42. korean_food.jpg - 韩式料理
+43. thai_food.jpg - 泰国菜
+
+默认图片：
+default.jpg（已有）
+
+注意事项：
+1. 所有图片建议尺寸：300x300像素
+2. 格式：JPG
+3. 文件名使用小写字母和下划线
+4. 图片内容要清晰展示对应的食物

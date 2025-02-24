@@ -1,0 +1,154 @@
+/* 页面容器样式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  padding: 40rpx 20rpx;
+  box-sizing: border-box;
+}
+
+/* 标题样式 */
+.title {
+  font-size: 56rpx;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2rpx 2rpx 10rpx rgba(0, 0, 0, 0.2);
+  margin: 60rpx 0 80rpx;
+  letter-spacing: 4rpx;
+}
+
+/* 食物展示区域样式 */
+.food-display {
+  width: 85%;
+  min-height: 240rpx;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10rpx);
+  border-radius: 30rpx;
+  box-shadow: 0 8rpx 32rpx rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80rpx;
+  padding: 40rpx;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+}
+
+.food-category {
+  font-size: 32rpx;
+  color: #fff;
+  background: linear-gradient(45deg, rgba(255, 107, 107, 0.8), rgba(255, 142, 142, 0.8));
+  padding: 10rpx 24rpx;
+  border-radius: 24rpx;
+  margin-bottom: 30rpx;
+  font-weight: 500;
+  letter-spacing: 2rpx;
+  transform: translateY(0);
+  transition: all 0.3s ease;
+  box-shadow: 0 4rpx 12rpx rgba(255, 107, 107, 0.15);
+}
+
+.food-emoji {
+  font-size: 120rpx;
+  margin-bottom: 30rpx;
+  line-height: 1;
+  transition: transform 0.3s ease;
+}
+
+.food-name {
+  font-size: 48rpx;
+  color: #2c3e50;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.food-display text {
+  font-size: 48rpx;
+  color: #2c3e50;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.4;
+}
+
+/* 食物展示区域的动画样式 */
+.food-display.animate {
+  animation: popBounce 1.2s cubic-bezier(0.36, 0, 0.66, 1);
+}
+
+/* 优化的弹出动画效果 */
+@keyframes popBounce {
+  0% { transform: scale(0.95) translateY(10rpx); opacity: 0.5; }
+  20% { transform: scale(1.05) translateY(-10rpx); }
+  35% { transform: scale(0.98) translateY(5rpx); }
+  50% { transform: scale(1.05) translateY(-8rpx); }
+  65% { transform: scale(0.98) translateY(4rpx); }
+  80% { transform: scale(1.02) translateY(-4rpx); }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.button-area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20rpx;
+}
+
+/* 随机推荐按钮样式 */
+.random-btn {
+  width: 85%;
+  height: 100rpx;
+  background: linear-gradient(45deg, #11998e, #38ef7d);
+  color: #fff;
+  font-size: 36rpx;
+  font-weight: bold;
+  border-radius: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8rpx 20rpx rgba(56, 239, 125, 0.3);
+  transition: all 0.3s ease;
+  letter-spacing: 2rpx;
+  position: relative;
+  overflow: hidden;
+}
+
+.random-btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: rotate(45deg);
+  transition: all 0.3s ease;
+}
+
+.button-hover {
+  transform: scale(0.95) translateY(3rpx);
+  box-shadow: 0 4rpx 12rpx rgba(56, 239, 125, 0.2);
+  background: linear-gradient(45deg, #0e8275, #32d870);
+}
+
+.button-hover::after {
+  transform: rotate(45deg) translateY(100%);
+  opacity: 0.5;
+}
+
+/* 作者信息区域样式 */
+.author-info {
+  margin-top: auto;
+  padding: 20rpx;
+  text-align: center;
+}
+
+.author-info text {
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 1rpx 1rpx 4rpx rgba(0, 0, 0, 0.1);
+}
