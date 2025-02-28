@@ -195,5 +195,21 @@ Page({
         isFirstClick: false
       });
     }, 500);
+  },
+
+  onShareAppMessage() {
+    return {
+      title: this.data.isFirstClick ? '快来看看今天吃什么？' : `今天我选择吃${this.data.currentFood.name}，你呢？`,
+      path: '/pages/index/index',
+      imageUrl: '/images/foods/share-cover.png'
+    }
+  },
+
+  onShareTimeline() {
+    return {
+      title: this.data.isFirstClick ? '纠结今天吃什么？来试试这个！' : `今天的美食推荐：${this.data.currentFood.name}`,
+      query: '',
+      imageUrl: '/images/foods/share-cover.png'
+    }
   }
 })
